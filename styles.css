@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Shadows+Into+Light");
+
+body {
+  background-color: #fff;
+  color: fff;
+  font-family: "Montserrat", sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+.center-div {
+  margin: auto;
+  width: 600px;
+  color: #000;
+  text-align: center;
+  position: relative;
+}
+
+.speech-marks {
+  font-weight: bolder;
+  font-size: 130px;
+  font-family: "Arial", serif;
+  color: #000;
+  opacity: 0.5;
+}
+
+#top-speech-marks {
+  position: absolute;
+  left: -60px;
+  top: -40px;
+}
+
+#bottom-speech-marks {
+  text-align: right;
+  position: absolute;
+  bottom: -10px;
+  right: -55px;
+}
+
+
+#quoteheading {
+  margin: 20px 0px;
+  font-size: 60px;
+  letter-spacing: -4px;
+  line-height: 1.1;
+  background-image: linear-gradient(
+    90deg,
+    #a9009e 0%,
+    #e0bcdd 15%,
+    #cf9bcc 30%,
+    #a166ab 44%,
+    #8c258d 58%,
+    #f0ddee 72%,
+    #7e2d7e 86%,
+    #993399 100%
+  );
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+
+#nameheading {
+    color: #000;
+    padding-bottom: 20px;
+    border-top: 1px dashed grey;
+    padding-top: 15px;
+    margin-top: 0px;
+    font-weight: 200;
+    font-style: italic;
+    font-family: "Shadows Into Light", cursive;
+    font-size: 48px;
+  }
+
+/* Buttons */
+.button {
+  background: none;
+  padding: 20px 60px;
+  border-radius: 5px;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 800;
+  text-decoration: none;
+  opacity: 0.4;
+  border: 5px solid transparent;
+  cursor: pointer;
+  -moz-border-image: -moz-linear-gradient(
+    90deg,
+    #a9009e 0%,
+    #e0bcdd 15%,
+    #cf9bcc 30%,
+    #a166ab 44%,
+    #8c258d 58%,
+    #f0ddee 72%,
+    #7e2d7e 86%,
+    #993399 100%
+  );
+  -webkit-border-image: -webkit-linear-gradient(
+    90deg,
+    #a9009e 0%,
+    #e0bcdd 15%,
+    #cf9bcc 30%,
+    #a166ab 44%,
+    #8c258d 58%,
+    #f0ddee 72%,
+    #7e2d7e 86%,
+    #993399 100%
+  );
+  border-image: linear-gradient(
+    90deg,
+    #a9009e 0%,
+    #e0bcdd 15%,
+    #cf9bcc 30%,
+    #a166ab 44%,
+    #8c258d 58%,
+    #f0ddee 72%,
+    #7e2d7e 86%,
+    #993399 100%
+  );
+
+  border-image-slice: 1;
+
+  -webkit-box-shadow: 0 10px 4px -5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 10px 4px -5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 4px -5px rgba(0, 0, 0, 0.5);
+  margin-right: 5px;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.button:hover,
+#new-quote:hover {
+  opacity: 0.8;
+}
+
+.button:active,
+#new-quote:active {
+  opacity: 1;
+}
+
+.button i {
+  font-size: 25px;
+  color: #4099ff;
+}
+
+#new-quote {
+  opacity: 0.7;
+}
+
+/* Top secetion styling */
+.topblock {
+  height: 200px;
+}
+
+.intro {
+  margin-bottom: 50px;
+  opacity: 0.8;
+  font-weight: 200;
+}
+
+.topline {
+  border-top: 1px dashed grey;
+  margin-top: 20px;
+}
+
+/*Bottom box styling*/
+.bottombox {
+  opacity: 0.77;
+}
+
+/* Beautiful rainbow text */
+.rainbowtext {
+  background-image: linear-gradient(
+    90deg,
+    #a9009e 0%,
+    #e0bcdd 15%,
+    #cf9bcc 30%,
+    #a166ab 44%,
+    #8c258d 58%,
+    #f0ddee 72%,
+    #7e2d7e 86%,
+    #993399 100%
+  );
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 400;
+}
+
+
+
+.smalltext {
+  font-size: 12px;
+}
