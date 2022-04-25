@@ -1,39 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link href="styles.css" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet">
     <title>MAGIC SHOP 💜</title>
 </head>
 
 <body>
-    <div class="center-div topblock">
-        <h1>Welcome to the Magic Shop</h1>
+  
+  <div class="theme-toggle">
+    <h2></h2>
+    <label class="switch">
+      <input type="checkbox" onclick="switchTheme()">
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <div class="center-div topblock">
+    <h1>Welcome to the Magic Shop</h1>
+        
+    <h4 class="intro">Click below to receive a random<i class="rainbowtext"> bangtan sonyeondan</i> quote!</h4>
+        
+    <a class="button" onclick="getNewQuote()">New Quote</a>
+    <a class="button" onclick="getTweet()"><i></i> TWEET</a>
+  </div>
       
-        <h4 class="intro">Click below to receive a random<i class="rainbowtext"> bangtan sonyeondan</i> quote!</h4>
-      
-        <a class="button">New Quote</a>
-        <a class="button"><i></i> TWEET</a>
-      </div>
-      
-      
-      <div class="center-div">
+    <div class="center-div">
         <span id="top-speech-marks" class="speech-marks">“</span>
-        <div class="topline"></div>
-        <h2 id="quoteheading">
-            It's okay to believe, the Magic Shop will comfort you. 💜
-        </h2>
-      
+          <div class="topline"></div>
+          <h2 id="quoteheading">It's okay to believe, the Magic Shop will comfort you. 💜</h2>
         <div style="text-align:right">
           <span id="bottom-speech-marks" class="speech-marks">”</span>
         </div>
+        <h3 id="nameheading" > BTS</h3>
+    </div>
       
-        <h3 id="nameheading" >—BTS</h3>
-      </div>
-      
-      <div class="center-div bottombox">
-        Made by <a class="rainbowtext" href="https://github.com/dev-aclara" target="_blank">dev-aclara 💜</a>
-      
-        <br/>
-      </div>
+    <div class="center-div bottombox">Made by <a class="rainbowtext" href="https://github.com/dev-aclara" target="_blank">dev-aclara 💜</a>
+    <br/>
+    </div>
   </body>
+
+  <script src="script.js" defer></script>
 </html>

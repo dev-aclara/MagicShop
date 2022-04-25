@@ -1,15 +1,86 @@
 @import url("https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Shadows+Into+Light");
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;300;400;700&display=swap');
 
 body {
   background-color: #fff;
-  color: fff;
+  color: #fff;
   font-family: "Montserrat", sans-serif;
   padding: 20px;
+  transition: 0.5s;
+}
+
+body.dark-mode {
+  background-color: #1A1A40;
+}
+
+h1.dark-mode{
+  color: #fff;
+}
+
+h4.dark-mode{
+  color: #fff;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-left: 48%;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+  transition: 0.5s;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.switch input:checked + .slider {
+  background-image: linear-gradient(
+    90deg,
+    #a9009e 0%,
+    #e0bcdd 15%,
+    #cf9bcc 30%,
+    #a166ab 44%,
+    #8c258d 58%,
+    #f0ddee 72%,
+    #7e2d7e 86%,
+    #993399 100%
+  );
+}
+
+.switch input:checked + .slider:before {
+  transform: translateX(20px);
 }
 
 h1 {
   text-transform: uppercase;
 }
+
 .center-div {
   margin: auto;
   width: 600px;
@@ -194,8 +265,3 @@ h1 {
   font-weight: 400;
 }
 
-
-
-.smalltext {
-  font-size: 12px;
-}
